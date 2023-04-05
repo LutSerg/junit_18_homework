@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'com.asteroster'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation (
+            'org.junit.jupiter:junit-jupiter:5.9.2',
+            'com.codeborne:selenide:6.12.3',
+            'org.slf4j:slf4j-reload4j:2.0.6',
+            'org.apache.logging.log4j:log4j-core:2.20.0'
+    )
+}
+
+test {
+    useJUnitPlatform()
+}
